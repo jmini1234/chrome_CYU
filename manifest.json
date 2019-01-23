@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "CYU",
+  "version": "0.1.0",
+  "description": "Prography_Cheer_You_Up_Project",
+ 
+  "content_scripts": [{
+    "css": ["background.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.google.com/"]
+  }],
+   // "web_accessible_resources": [
+   //    "images/*"
+   //  ], //local에 있는 이미지에 접근할 때 사용해야한다.
+   "chrome_url_overrides" :{
+    "newtab":"date_time.html"
+   },
+    "permissions": [
+      "<all_urls>"
+  ],
+    "browser_action" : {
+      "default_icon" : {
+          "48" :"icon.png"
+      }
+    },
+  "icons": {
+      "48" :"icon.png"
+  }
+}
