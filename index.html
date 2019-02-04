@@ -4,16 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="jquery.min.js"></script>
   <script src="background.js"></script>
   <script src="clock.js"></script>
   <script src="init.js"></script>
+
   <title>New Tab</title>
 </head>
 <body>
+  <main id="container" class="daymode">
+  <time id="date" datetime="" class="clocktext"></time>
+  <time id="time" datetime="" class="clocktext"></time>
+  <div id="weather" class="clocktext infotext"></div>
+  <img id="icon" src="https://openweathermap.org/img/w/01n.png" alt="weather icon"/>
+  <div id="gps" class="clocktext infotext"></div>
+  <div id="weatherdetails" class="clocktext infotext"></div>
+ <!--  <div id="ssmlink" class="clocktext infotext">
+  <a href="https://shearspiremedia.com/demos/clock/" target="_blank">ShearSpire Media Weather Clock</a>
+  </div> -->
+</main>
+  <!-- A simple clock that fits on an old iPhone 4s so you can reuse your old device as a wall clock. This version also includes ip location detection and displays the current weather. -->
   <div class="container" id="background">
     <div class="header">
-      <div class="weather"></div><div class="empty"></div><div class="homepage"></div>
-    </div>
+     <!--  <div class="weather"></div><div class="empty"></div><div class="homepage"></div>
+    </div> -->
     <div class="nav">
       <div id="center">
         <span id="current-time" class="clock"></span>
